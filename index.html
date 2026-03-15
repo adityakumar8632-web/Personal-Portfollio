@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Kumar — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">AK<span class="logo-dot">.</span></div>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Let's Talk</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#hero" class="nav-mobile-link">Home</a>
+      <a href="#projects" class="nav-mobile-link">Projects</a>
+      <a href="#skills" class="nav-mobile-link">Skills</a>
+      <a href="#experience" class="nav-mobile-link">Experience</a>
+      <a href="#contact" class="nav-mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-card glass-card reveal">
+      <div class="hero-badge">Available for Projects</div>
+      <h1 class="hero-name">Aditya<br/><span class="hero-name-accent">Kumar</span></h1>
+      <p class="hero-title">Full Stack Developer <span class="title-sep">x</span> Designer</p>
+      <p class="hero-tagline">I ship fast. I think faster.<br />From idea to deployment — under 2 weeks, every time.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary magnetic" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="btn btn-ghost magnetic" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">&lt;2.5w</span>
+          <span class="stat-label">Avg Delivery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="capabilities" id="skills">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">What I Bring</p>
+      <h2 class="section-title">Core Capabilities</h2>
+    </div>
+    <div class="capabilities-grid">
+
+      <div class="cap-card glass-card reveal magnetic" data-delay="0">
+        <div class="cap-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <path d="M13 20l4 4 10-8" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Velocity-First Development</h3>
+        <p class="cap-desc">Complete, production-ready projects delivered in under 2 weeks. No drag. No bloat. Just results.</p>
+        <div class="cap-tags">
+          <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Next.js</span>
+        </div>
+      </div>
+
+      <div class="cap-card glass-card reveal magnetic" data-delay="80">
+        <div class="cap-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="10" height="10" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
+            <rect x="22" y="8" width="10" height="10" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
+            <rect x="8" y="22" width="10" height="10" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
+            <rect x="22" y="22" width="10" height="10" rx="2" stroke="var(--accent)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">AI-Augmented Building</h3>
+        <p class="cap-desc">I use LLMs as precision tools — not crutches. I understand every line I ship. No vibe coding.</p>
+        <div class="cap-tags">
+          <span class="tag">GPT-4</span><span class="tag">Claude</span><span class="tag">Gemini</span>
+        </div>
+      </div>
+
+      <div class="cap-card glass-card reveal magnetic" data-delay="160">
+        <div class="cap-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="14" r="5" stroke="var(--accent)" stroke-width="1.5"/>
+            <path d="M10 32c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Client Insight</h3>
+        <p class="cap-desc">I translate vague requirements into exactly what clients need — often before they can articulate it themselves.</p>
+        <div class="cap-tags">
+          <span class="tag">UX</span><span class="tag">Discovery</span><span class="tag">Strategy</span>
+        </div>
+      </div>
+
+      <div class="cap-card glass-card reveal magnetic" data-delay="240">
+        <div class="cap-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8v24M8 20h24" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="5" stroke="var(--accent)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3 class="cap-title">Reliability Over Flash</h3>
+        <p class="cap-desc">Solid, dependable systems first. Visual complexity is earned, never assumed. Built to last.</p>
+        <div class="cap-tags">
+          <span class="tag">Performance</span><span class="tag">Testing</span><span class="tag">Uptime</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">What I've Built</p>
+      <h2 class="section-title">Project Explorer</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card glass-card reveal magnetic" data-project="0" data-delay="0">
+        <div class="project-preview">
+          <div class="project-preview-bg" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);"></div>
+          <div class="project-preview-label">AI · Finance</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">AI Payment Dashboard</h3>
+          <p class="project-desc">Intelligent payment analytics with AI-driven insights and real-time transaction monitoring.</p>
+          <div class="project-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">GPT-4</span><span class="tag">Stripe</span>
+          </div>
+          <button class="project-open-btn">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal magnetic" data-project="1" data-delay="80">
+        <div class="project-preview">
+          <div class="project-preview-bg" style="background: linear-gradient(135deg, #1a0533, #2d1b69, #11998e);"></div>
+          <div class="project-preview-label">AI · Safety</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">AI Moderation System</h3>
+          <p class="project-desc">Automated content moderation pipeline using multi-model AI to flag and filter harmful content at scale.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Claude</span><span class="tag">PostgreSQL</span>
+          </div>
+          <button class="project-open-btn">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal magnetic" data-project="2" data-delay="160">
+        <div class="project-preview">
+          <div class="project-preview-bg" style="background: linear-gradient(135deg, #0d1117, #161b22, #58a6ff22);"></div>
+          <div class="project-preview-label">Dev · Tools</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Developer Productivity Tool</h3>
+          <p class="project-desc">A focused workspace tool that eliminates context-switching and keeps developers in flow state longer.</p>
+          <div class="project-tags">
+            <span class="tag">Electron</span><span class="tag">TypeScript</span><span class="tag">SQLite</span>
+          </div>
+          <button class="project-open-btn">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal magnetic" data-project="3" data-delay="240">
+        <div class="project-preview">
+          <div class="project-preview-bg" style="background: linear-gradient(135deg, #0f3443, #34e89e22, #0f3443);"></div>
+          <div class="project-preview-label">UX · Performance</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Website UX / Performance Analyser</h3>
+          <p class="project-desc">Automated UX and performance auditing tool that surfaces actionable improvements with AI-generated reports.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span><span class="tag">Lighthouse</span><span class="tag">AI</span>
+          </div>
+          <button class="project-open-btn">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+      <div class="project-card glass-card reveal magnetic" data-project="4" data-delay="320">
+        <div class="project-preview">
+          <div class="project-preview-bg" style="background: linear-gradient(135deg, #1c1c2e, #2d2d44, #c9a96e22);"></div>
+          <div class="project-preview-label">Web · Legal</div>
+        </div>
+        <div class="project-info">
+          <h3 class="project-title">Law Firm Website</h3>
+          <p class="project-desc">Premium, conversion-focused law firm website built with clean architecture, fast load times, and strong UX.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+          <button class="project-open-btn">View Project <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">My Journey</p>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal" data-delay="0">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">2022 — Present</span>
+            <span class="timeline-badge">Active</span>
+          </div>
+          <h3 class="timeline-role">Full Stack Developer & Designer</h3>
+          <p class="timeline-org">Independent / Freelance</p>
+          <p class="timeline-desc">Building production-ready web applications and SaaS tools for clients. End-to-end ownership — from discovery to deployment.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">2021 — 2022</span>
+          </div>
+          <h3 class="timeline-role">AI-Augmented Development</h3>
+          <p class="timeline-org">Self-Directed Learning & Implementation</p>
+          <p class="timeline-desc">Deep dive into integrating LLMs and AI APIs into real products. Built and shipped multiple AI-powered tools during this period.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal" data-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-meta">
+            <span class="timeline-period">2019 — 2021</span>
+          </div>
+          <h3 class="timeline-role">Foundation & Productivity</h3>
+          <p class="timeline-org">Core Skill Development</p>
+          <p class="timeline-desc">Built the foundations of frontend and backend development. Developed systems thinking and a reliability-first engineering mindset.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-card glass-card reveal">
+      <p class="section-eyebrow" style="text-align:center;">Get In Touch</p>
+      <h2 class="contact-title">Let's build something<br /><span class="hero-name-accent">great together.</span></h2>
+      <p class="contact-sub">Have a project in mind? I'll turn it into reality — fast, clean, and exactly as you imagined it.</p>
+      <div class="contact-actions">
+        <a href="https://mail.google.com/mail/?view=cm&to=adityakumar8263863@gmail.com&su=Project Inquiry" class="btn btn-primary magnetic">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4l6 5 6-5M2 4h12v9H2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://github.com/adityakumar8632-web" target="_blank" rel="noopener" class="btn btn-ghost magnetic">View GitHub</a>
+        <a href="#" class="btn btn-ghost magnetic">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo">AK<span class="logo-dot">.</span></span>
+      <p class="footer-text">© 2025 Aditya Kumar. Built fast. Shipped clean.</p>
+      <a href="https://github.com/adityakumar8632-web" target="_blank" rel="noopener" class="footer-link">GitHub Repo</a>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal glass-card" id="modal">
+      <button class="modal-close" id="modalClose">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/animations.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
